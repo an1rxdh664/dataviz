@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;   
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #252525;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* background: green; */
+            padding: 100px;
+        }
+        .searchBoxContainer {
+            max-width: 500px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* background: red; */
+        }
+        .logoImage img{
+            max-width: 500px;
+        }
+        .inputBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 500px;
+            height: 50px;
+            border-radius: 25px;
+            background: white;
+            border: none;
+            gap: 5px;
+            padding-right: 10px;
+        }
+        .inputBox input{
+            width: 500px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            padding-left: 15px;
+            font-size: 15px;
+        }
+        .inputBox a {
+            cursor: pointer;
+        }
+        .inputBox img {
+            width: 30px;
+            padding: 2px;
+        }
+        #searchBox:active{
+            border-radius: 25px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="searchBoxContainer">
+            <div class="logoImage">
+                <img src="google-search-icon.png" alt="google_logo">
+            </div>
+            <div class="inputBoxContainer">
+                <div class="inputBox">
+                    <input type="text" name="searchBox" id="searchBox" placeholder="Enter">
+                    <a><img src="search.svg" alt="search"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
